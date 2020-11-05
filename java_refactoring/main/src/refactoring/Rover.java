@@ -71,7 +71,7 @@ public class Rover {
 			this.y = y;
 		}
 
-		//TODO: Refactor
+	
 		public Position forward(Heading heading) {
 			if (heading.isVertical()) return verticalMovement(heading, 1);
 			return horizontalMovement(heading, 1);
@@ -82,7 +82,6 @@ public class Rover {
 			return horizontalMovement(heading, -1);
 		}
 
-		//TODO: Refactorizar para que no tenga dos parametros
 		private Position verticalMovement(Heading heading, int sign) {
 			if (heading == North) return new Position(x, y + sign);
 			return new Position(x, y - sign);
