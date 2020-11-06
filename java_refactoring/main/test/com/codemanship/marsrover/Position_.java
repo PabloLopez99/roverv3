@@ -1,10 +1,10 @@
 package com.codemanship.marsrover;
 
 import org.junit.Test;
-import refactoring.Rover.Position;
+import Rover.Position;
 
 import static org.junit.Assert.assertEquals;
-import static refactoring.Rover.Heading.*;
+import static Rover.Heading.*;
 
 public class Position_ {
 
